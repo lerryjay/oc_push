@@ -1,0 +1,29 @@
+--- /admin/language/en-gb/common/column_left.php
+  -- add push notification text language
+
+--- /admin/controller/common/column_left.php
+  -- add links to menu
+
+--- /admin/controller
+  -- add directory custom
+
+--- /admin/controller/custom
+  -- add controller push_notification.php
+
+
+--- /admin/language/en-gb
+  -- add directory custom
+
+
+--- /admin/language/en-gb/custom
+  -- add push_notification.php
+
+--- /admin/view/template/custom
+  -- add directory push_notification
+
+--- /admin/view/template/custom/subcribers/push_notification
+ -- add subscribers.phtwigp
+ -- add schedule.twig
+ -- add edit.twig
+
+

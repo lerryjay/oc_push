@@ -1,14 +1,14 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://localhost/obejor/');
+define('HTTP_SERVER', 'http://localhost/oc_push/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://localhost/obejor/');
+define('HTTPS_SERVER', 'http://localhost/oc_push/');
 
 // DIR
-define('DIR_APPLICATION', 'C:/xampp/htdocs/obejor/catalog/');
-define('DIR_SYSTEM', 'C:/xampp/htdocs/obejor/system/');
-define('DIR_IMAGE', 'C:/xampp/htdocs/obejor/image/');
+define('DIR_APPLICATION', '/opt/lampp/htdocs/oc_push/catalog/');
+define('DIR_SYSTEM', '/opt/lampp/htdocs/oc_push/system/');
+define('DIR_IMAGE', '/opt/lampp/htdocs/oc_push/image/');
 define('DIR_STORAGE', DIR_SYSTEM . 'storage/');
 define('DIR_LANGUAGE', DIR_APPLICATION . 'language/');
 define('DIR_TEMPLATE', DIR_APPLICATION . 'view/theme/');
@@ -25,6 +25,6 @@ define('DB_DRIVER', 'mysqli');
 define('DB_HOSTNAME', 'localhost');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');
-define('DB_DATABASE', 'obejor');
+define('DB_DATABASE', 'oc_push');
 define('DB_PORT', '3306');
 define('DB_PREFIX', 'oc_');

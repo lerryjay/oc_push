@@ -353,6 +353,31 @@ class ControllerCommonColumnLeft extends Controller {
 					'children' => array()		
 				);	
 			}
+
+			/**Added line */ 
+			$notificationMenus = [];
+			if ($this->user->hasPermission('access', 'custom/push_notification')) {
+				$notificationMenus[] = array(
+					'name'	   => $this->language->get('text_subscribers'),
+					'href'     => $this->url->link('custom/push_notification/subscribers', 'user_token=' . $this->session->data['user_token'], true),
+					'children' => array()		
+				);
+
+				$notificationMenus[] = array(
+					'name'	   => $this->language->get('text_schedules'),
+					'href'     => $this->url->link('custom/push_notification/schedules', 'user_token=' . $this->session->data['user_token'], true),
+					'children' => array()		
+				);
+				
+				$marketing[] = array(
+					'id'       => 'menu-push',
+					'icon'	   => '', 
+					'name'	   => $this->language->get('text_push_notification'),
+					'href'     => '',
+					'children' => $notificationMenus
+				);	
+			}
+			/**Line addition ends here */ 
 			
 			if ($this->user->hasPermission('access', 'marketing/coupon')) {	
 				$marketing[] = array(
